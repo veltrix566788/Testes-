@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Organização do Site</title>
+<style>
+    body{font-family:Arial,sans-serif;background:#101014;color:#fff;margin:0;padding:30px;line-height:1.5}
+    .box{max-width:900px;margin:auto;background:#191922;border:1px solid #333;border-radius:14px;padding:25px;box-shadow:0 8px 25px #0006}
+    h1{margin-top:0;color:#fff} a{color:#8ab4ff} code{background:#282832;padding:3px 6px;border-radius:6px}
+    pre{background:#0b0b0f;border:1px solid #333;border-radius:12px;padding:18px;overflow:auto;color:#d7d7d7}
+    .ok{color:#7CFF9B;font-weight:bold}.warn{color:#ffd36b;font-weight:bold}
+  
+/* === VELTRIX TOPO PREMIUM === */
+:root{
+  --veltrix-purple:#b300ff;
+  --veltrix-purple2:#7900ff;
+  --veltrix-bg:#050007;
+}
+header{
+  min-height:74px !important;
+  height:74px !important;
+  padding:8px 18px !important;
+  background:linear-gradient(90deg, rgba(5,0,8,.98), rgba(23,0,34,.98), rgba(5,0,8,.98)) !important;
+  border-bottom:1px solid rgba(179,0,255,.75) !important;
+  box-shadow:0 0 24px rgba(179,0,255,.45), inset 0 -1px 0 rgba(255,255,255,.08) !important;
+  backdrop-filter:blur(12px) !important;
+}
+header::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  background:radial-gradient(circle at 50% 0%, rgba(179,0,255,.35), transparent 45%);
+}
+.menu-toggle{
+  width:56px !important;
+  height:56px !important;
+  border-radius:16px !important;
+  background:linear-gradient(135deg,#cc00ff,#7900ff) !important;
+  color:white !important;
+  box-shadow:0 0 18px rgba(179,0,255,.65) !important;
+  font-size:1.45rem !important;
+}
+.logo{
+  position:absolute !important;
+  left:50% !important;
+  top:50% !important;
+  transform:translate(-50%,-50%) !important;
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  gap:12px !important;
+  white-space:nowrap !important;
+}
+.logo img{
+  width:54px !important;
+  height:54px !important;
+  border-radius:10px !important;
+  object-fit:cover !important;
+  filter:drop-shadow(0 0 8px #b300ff) drop-shadow(0 0 18px rgba(179,0,255,.85)) !important;
+}
+.logo-text{
+  font-family:'Montserrat', sans-serif !important;
+  font-size:1.65rem !important;
+  font-weight:900 !important;
+  letter-spacing:3px !important;
+  text-transform:uppercase !important;
+  color:#e9c8ff !important;
+  text-shadow:0 0 8px #b300ff, 0 0 18px #b300ff, 0 0 28px #7900ff !important;
+}
+.logo-text::after{
+  content:' STORE';
+  font-size:.65rem;
+  margin-left:8px;
+  letter-spacing:2px;
+  color:#ffffff;
+  opacity:.85;
+}
+.cart-icon{
+  width:56px !important;
+  height:56px !important;
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  border-radius:16px !important;
+  background:rgba(255,255,255,.09) !important;
+  border:1px solid rgba(179,0,255,.35) !important;
+  box-shadow:0 0 15px rgba(179,0,255,.35) !important;
+  font-size:1.55rem !important;
+}
+#cart-count{
+  top:-5px !important;
+  right:-5px !important;
+  background:linear-gradient(135deg,#ff0066,#b300ff) !important;
+}
+.container, main{
+  margin-top:88px !important;
+}
+@media(max-width:480px){
+  header{height:68px !important; min-height:68px !important; padding:7px 14px !important;}
+  .menu-toggle,.cart-icon{width:50px !important;height:50px !important;border-radius:14px !important;}
+  .logo img{width:44px !important;height:44px !important;}
+  .logo-text{font-size:1.32rem !important;letter-spacing:2px !important;}
+  .logo-text::after{display:none;}
+  .container, main{margin-top:82px !important;}
+}
+
+</style>
+</head>
+<body>
+<div class="box">
+<h1>Site Vendas - HTML Organizado</h1>
+<p class="ok">Pacote corrigido e organizado para abrir no VS Code ou subir na hospedagem.</p>
+<p>Abra primeiro: <a href="index.html">index.html</a></p>
+<h2>Estrutura</h2>
+<pre>
+Site_Vendas_HTML_Organizado/
+├── index.html
+├── carrinho.html
+├── ModsGratis.html
+├── TermosDeCompra.html
+├── Assets/
+│   ├── css/
+│   ├── JS/
+│   ├── Json/
+│   └── imagens/
+└── Produtos/
+    ├── Exemplo 1/
+    │   └── Exemplo 1.html
+    └── Exemplo 2/
+        └── Exemplo 2.html
+  </pre>
+<h2>Correções feitas</h2>
+<p>✅ Criado <code>Assets/JS/DevTools.js</code> para parar erro de arquivo faltando.</p>
+<p>✅ Corrigido caminho do <code>modsgratis.json</code>.</p>
+<p>✅ Corrigido nome da imagem <code>Produto Sem Imagem.png</code>.</p>
+<p>✅ Produto 2 agora usa imagem existente, sem quebrar.</p>
+<p class="warn">Importante: mantenha as pastas <code>Assets</code> e <code>Produtos</code> junto dos HTML.</p>
+</div>
+</body>
+</html>
